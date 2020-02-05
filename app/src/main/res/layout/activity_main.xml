@@ -1,82 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/pictureImageView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/mainText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Hello World!" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/mainKnapBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/mainButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainText"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="@string/mainButton" />
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Hello World!" />
 
-    <ImageView
-        android:id="@+id/pictureimageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/imageText"
-        app:layout_constraintBottom_toTopOf="@+id/mainText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        <Button
+            android:id="@+id/mainKnapBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/mainButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainText"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="@string/mainButton" />
 
-    <Button
-        android:id="@+id/playButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/play"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
-        app:layout_constraintStart_toEndOf="@+id/stopButton"
-        app:layout_constraintTop_toBottomOf="@+id/mainKnapBtn"
-        app:layout_constraintVertical_bias="0.443" />
+        <ImageView
+            android:id="@+id/pictureimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imageText"
+            app:layout_constraintBottom_toTopOf="@+id/mainText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
 
-    <Button
-        android:id="@+id/stopButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainKnapBtn"
-        app:layout_constraintVertical_bias="0.443" />
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toEndOf="@+id/stopButton"
+            app:layout_constraintTop_toBottomOf="@+id/mainKnapBtn"
+            app:layout_constraintVertical_bias="0.443" />
 
-    <Button
-        android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/stopButton"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainKnapBtn"
-        app:layout_constraintVertical_bias="0.44" />
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainKnapBtn"
+            app:layout_constraintVertical_bias="0.443" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stopButton"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainKnapBtn"
+            app:layout_constraintVertical_bias="0.44" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
