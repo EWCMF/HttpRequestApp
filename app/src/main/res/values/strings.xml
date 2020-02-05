@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HttpRequestApp</string>
+    <string name="mainButton">Ny Joke</string>
+    <string name="imageText">random image</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="next">Next</string>
+</resources>
